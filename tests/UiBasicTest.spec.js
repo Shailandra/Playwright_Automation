@@ -1,6 +1,6 @@
 const { test } = require('@playwright/test');
 
-test.only('First Playwright Test', async ({ browser }) => {
+test('First Playwright Test', async ({ browser }) => {
 
     // Create a new browser context
     const context = await browser.newContext();

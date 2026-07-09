@@ -1,6 +1,6 @@
 const { test } = require('@playwright/test');
 
-test.only('Test static select dropdown', async ({ page }) => {
+test('Test static select dropdown', async ({ page }) => {
 
     await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
     await page.waitForLoadState('networkidle')

@@ -20,7 +20,7 @@ test('Browser navigation validation', async ({ page }) => {
 
 });
 
-test.only('Visual Testing', async ({ page }) => {
+test('Visual Testing', async ({ page }) => {
 
     await page.goto('https://www.flightware.com/');
     expect(await page.screenshot()).toMatchSnapshot('landing.png')
