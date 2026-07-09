@@ -24,4 +24,5 @@ test.only('Visual Testing', async ({ page }) => {
 
     await page.goto('https://www.flightware.com/');
     expect(await page.screenshot()).toMatchSnapshot('landing.png')
+    //testing test 1 branch
 })
