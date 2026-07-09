@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03">
+  <CstmrCdtTrfInitn>
+    <GrpHdr>
+      <MsgId>ji7yl2</MsgId>
+      <CreDtTm>2026-06-18T12:56:52.000Z</CreDtTm>
+      <NbOfTxs>3</NbOfTxs>
+      <CtrlSum>7.50</CtrlSum>
+      <InitgPty>
+        <Nm>CONVEXXML</Nm>
+        <Id>
+          <OrgId>
+            <Othr>
+              <Id>CONVEXXML</Id>
+            </Othr>
+          </OrgId>
+        </Id>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>841573-392998</PmtInfId>
+      <PmtMtd>TRF</PmtMtd>
+      <NbOfTxs>3</NbOfTxs>
+      <CtrlSum>7.50</CtrlSum>
+      <PmtTpInf>
+        <SvcLvl>
+          <Cd>SEPA</Cd>
+        </SvcLvl>
+      </PmtTpInf>
+      <ReqdExctnDt>2026-06-23</ReqdExctnDt>
+      <Dbtr>
+        <Nm>Convex Europe SA</Nm>
+        <PstlAdr>
+          <StrtNm>37 Boulevard Joseph II</StrtNm>
+          <PstCd>L-1840</PstCd>
+          <TwnNm>Luxembourg</TwnNm>
+          <CtrySubDvsn>NA</CtrySubDvsn>
+          <Ctry>LU</Ctry>
+        </PstlAdr>
+        <Id>
+          <OrgId>
+            <Othr>
+              <Id>0618077</Id>
+              <SchmeNm>
+                <Prtry>JPMCOID</Prtry>
+              </SchmeNm>
+            </Othr>
+          </OrgId>
+        </Id>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>LU600670006550208329</IBAN>
+        </Id>
+        <Tp>
+          <Cd>CACC</Cd>
+        </Tp>
+        <Ccy>EUR</Ccy>
+      </DbtrAcct>
+      <DbtrAgt>
+        <FinInstnId>
+          <BIC>CHASLULX</BIC>
+          <PstlAdr>
+            <Ctry>LU</Ctry>
+          </PstlAdr>
+        </FinInstnId>
+      </DbtrAgt>
+      <ChrgBr>SLEV</ChrgBr>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>PAY71100001-0</InstrId>
+          <EndToEndId>DOCOPAY71100001-0</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="EUR">2.50</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <CdtrAgt>
+          <FinInstnId>
+            <BIC>BARCGB22</BIC>
+            <Nm>BARCLAYS BANK PLC</Nm>
+            <PstlAdr>
+              <Ctry>GB</Ctry>
+            </PstlAdr>
+          </FinInstnId>
+          <BrnchId>
+            <Id>200000</Id>
+          </BrnchId>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>PSP Ltd</Nm>
+          <PstlAdr>
+            <StrtNm>107 Cheapside</StrtNm>
+            <PstCd>EC2V 6DN</PstCd>
+            <TwnNm>London</TwnNm>
+            <Ctry>GB</Ctry>
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <Othr>
+              <Id>46425433</Id>
+            </Othr>
+          </Id>
+        </CdtrAcct>
+        <Tax>
+          <Dbtr>
+            <TaxId>LU33315427</TaxId>
+          </Dbtr>
+        </Tax>
+        <RmtInf>
+          <Ustrd>V1Z CLM16356394 DD999K24C000 PAY71100001</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>PAY71100002-0</InstrId>
+          <EndToEndId>DOCOPAY71100002-0</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="EUR">2.50</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <CdtrAgt>
+          <FinInstnId>
+            <BIC>BPMOIT22XXX</BIC>
+            <Nm>BPER BANCA S.P.A.</Nm>
+            <PstlAdr>
+              <Ctry>IT</Ctry>
+            </PstlAdr>
+          </FinInstnId>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>Marine Insurance Agency S.r.l.</Nm>
+          <PstlAdr>
+            <StrtNm>Via delle Casaccie, 1</StrtNm>
+            <PstCd>16122</PstCd>
+            <TwnNm>Genoa</TwnNm>
+            <Ctry>IT</Ctry>
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <Othr>
+              <Id>4180647</Id>
+            </Othr>
+          </Id>
+        </CdtrAcct>
+        <Tax>
+          <Dbtr>
+            <TaxId>LU33315427</TaxId>
+          </Dbtr>
+        </Tax>
+        <RmtInf>
+          <Ustrd>V1Z CLM99762808 DD999K24C000 PAY71100002</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>PAY71100003-0</InstrId>
+          <EndToEndId>DOCOPAY71100003-0</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="EUR">2.50</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <CdtrAgt>
+          <FinInstnId>
+            <BIC>BARCGB22</BIC>
+            <Nm>BARCLAYS BANK PLC</Nm>
+            <PstlAdr>
+              <Ctry>GB</Ctry>
+            </PstlAdr>
+          </FinInstnId>
+          <BrnchId>
+            <Id>200000</Id>
+          </BrnchId>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>PSP Ltd</Nm>
+          <PstlAdr>
+            <StrtNm>2 to 28 Procter Street, Holborn</StrtNm>
+            <PstCd>WC1V 6NX</PstCd>
+            <TwnNm>London</TwnNm>
+            <Ctry>GB</Ctry>
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <Othr>
+              <Id>46425433</Id>
+            </Othr>
+          </Id>
+        </CdtrAcct>
+        <Tax>
+          <Dbtr>
+            <TaxId>LU33315427</TaxId>
+          </Dbtr>
+        </Tax>
+        <RmtInf>
+          <Ustrd>V1Z CLM40351119 DD999K24C000 PAY71100003</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+    </PmtInf>
+  </CstmrCdtTrfInitn>
+</Document>
