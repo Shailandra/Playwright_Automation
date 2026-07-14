@@ -1,0 +1,571 @@
+Level 1: Playwright Basics (1–10)
+Q1
+
+Launch Chromium and open https://google.com.
+
+Q2
+
+Print the page title.
+
+Q3
+
+Verify the page title.
+
+Q4
+
+Verify the current URL.
+
+Q5
+
+Fill a textbox and click a button.
+
+Q6
+
+Read text from an element.
+
+Q7
+
+Check whether a button is enabled.
+
+Q8
+
+Check whether a checkbox is checked.
+
+Q9
+
+Select an option from a dropdown.
+
+Q10
+
+Handle a JavaScript alert.
+
+Level 2: Locators (11–20)
+Q11
+
+Locate a button using getByRole().
+
+Q12
+
+Locate an input using getByPlaceholder().
+
+Q13
+
+Locate an element using getByLabel().
+
+Q14
+
+Locate multiple products and print their names.
+
+Q15
+
+Click the third product.
+
+Q16
+
+Click the last product.
+
+Q17
+
+Locate using CSS.
+
+Q18
+
+Locate using XPath.
+
+Q19
+
+Use filter() to find a product.
+
+Q20
+
+Count total products.
+
+Level 3: Assertions (21–30)
+Q21
+
+Verify text.
+
+Q22
+
+Verify partial text.
+
+Q23
+
+Verify button visibility.
+
+Q24
+
+Verify element hidden.
+
+Q25
+
+Verify checkbox checked.
+
+Q26
+
+Verify page title.
+
+Q27
+
+Verify URL.
+
+Q28
+
+Verify attribute.
+
+Q29
+
+Verify input value.
+
+Q30
+
+Verify image is visible.
+
+Level 4: Waits (31–40)
+Q31
+
+Wait for element.
+
+Q32
+
+Wait for URL.
+
+Q33
+
+Wait for network idle.
+
+Q34
+
+Wait for API response.
+
+Q35
+
+Wait for download.
+
+Q36
+
+Wait for popup.
+
+Q37
+
+Wait for new page.
+
+Q38
+
+Wait until element disappears.
+
+Q39
+
+Handle spinner.
+
+Q40
+
+Handle dynamic loading.
+
+Level 5: Forms (41–50)
+Q41
+
+Login to a website.
+
+Q42
+
+Register a new user.
+
+Q43
+
+Upload a file.
+
+Q44
+
+Download a file.
+
+Q45
+
+Fill date picker.
+
+Q46
+
+Select radio button.
+
+Q47
+
+Handle multiple checkboxes.
+
+Q48
+
+Handle autocomplete.
+
+Q49
+
+Handle calendar.
+
+Q50
+
+Submit a form.
+
+Level 6: E-commerce (51–60)
+Q51
+
+Search a product.
+
+Q52
+
+Add product to cart.
+
+Q53
+
+Verify cart count.
+
+Q54
+
+Remove product.
+
+Q55
+
+Checkout.
+
+Q56
+
+Verify order confirmation.
+
+Q57
+
+Apply coupon.
+
+Q58
+
+Verify total amount.
+
+Q59
+
+Increase quantity.
+
+Q60
+
+Verify order history.
+
+Level 7: API Testing (61–70)
+Q61
+
+Generate authentication token.
+
+Q62
+
+Create an order.
+
+Q63
+
+Get order details.
+
+Q64
+
+Delete an order.
+
+Q65
+
+Update an order.
+
+Q66
+
+Validate JSON response.
+
+Q67
+
+Read response headers.
+
+Q68
+
+Validate response time.
+
+Q69
+
+Use Bearer token.
+
+Q70
+
+Chain multiple APIs.
+
+Level 8: API + UI (71–80)
+Q71
+
+Create order using API and verify in UI.
+
+Q72
+
+Delete order using API and verify UI.
+
+Q73
+
+Login using API token.
+
+Q74
+
+Inject token into local storage.
+
+Q75
+
+Skip login using storage state.
+
+Q76
+
+Mock login API.
+
+Q77
+
+Intercept product API.
+
+Q78
+
+Modify API response.
+
+Q79
+
+Block API request.
+
+Q80
+
+Verify API request payload.
+
+Level 9: Advanced Playwright (81–90)
+Q81
+
+Handle iframe.
+
+Q82
+
+Handle multiple tabs.
+
+Q83
+
+Handle popup window.
+
+Q84
+
+Handle Shadow DOM.
+
+Q85
+
+Take screenshot.
+
+Q86
+
+Record video.
+
+Q87
+
+Use Trace Viewer.
+
+Q88
+
+Use browser context.
+
+Q89
+
+Emulate mobile.
+
+Q90
+
+Handle geolocation.
+
+Level 10: Framework Design (91–100)
+Q91
+
+Implement Page Object Model.
+
+Q92
+
+Read data from JSON.
+
+Q93
+
+Read data from Excel.
+
+Q94
+
+Use fixtures.
+
+Q95
+
+Create reusable utilities.
+
+Q96
+
+Implement retries.
+
+Q97
+
+Run tests in parallel.
+
+Q98
+
+Run cross-browser tests.
+
+Q99
+
+Generate HTML reports.
+
+Q100
+
+Execute tests in GitHub Actions.
+
+Bonus Interview Challenges (Real Company Scenarios)
+Challenge 1
+
+Automate Amazon search and verify results.
+
+Challenge 2
+
+Automate Flipkart login (mock OTP).
+
+Challenge 3
+
+Automate Swag Labs checkout.
+
+Challenge 4
+
+Automate OrangeHRM employee creation.
+
+Challenge 5
+
+Automate SauceDemo complete purchase.
+
+Challenge 6
+
+Automate Rahul Shetty Academy e-commerce project.
+
+Challenge 7
+
+Build a Playwright framework from scratch.
+
+Challenge 8
+
+Integrate Playwright with Jenkins.
+
+Challenge 9
+
+Integrate Playwright with Docker.
+
+Challenge 10
+
+Run tests in parallel across Chrome, Firefox, and WebKit.
+
+Recommended progression
+
+Since you've already been working with:
+
+Page Object Model
+API testing
+JSON test data
+Git/GitHub
+Postman
+
+you're around an intermediate level. A practical path would be:
+
+Days 1–7: Solve Questions 1–30.
+Days 8–14: Solve Questions 31–60.
+Days 15–21: Solve Questions 61–80.
+Days 22–30: Solve Questions 81–100 and the bonus challenges.
+
+By the end of these exercises, you'll have covered most of the Playwright concepts commonly assessed in automation engineer interviews and used in day-to-day testing.
+
+give me site in which I can play all test
+
+If you want to practice Playwright automation, these are some of the best websites. They cover beginner to advanced scenarios and are widely used for learning and interviews.
+
+Website	Best For	Difficulty
+Practice Software Testing	Complete e-commerce automation	⭐⭐⭐⭐⭐
+Sauce Demo	Login, cart, checkout	⭐⭐
+Rahul Shetty Academy Client App	API + UI integration, POM	⭐⭐⭐⭐
+The Internet by Heroku	Alerts, iframes, uploads, downloads	⭐⭐⭐
+DemoQA	Forms, tables, drag & drop	⭐⭐⭐
+OpenCart Demo	Shopping cart, search, checkout	⭐⭐⭐
+Automation Exercise	End-to-end e-commerce testing	⭐⭐⭐⭐
+OrangeHRM Demo	HRMS workflows, CRUD	⭐⭐⭐⭐
+Parabank	Banking application	⭐⭐⭐
+Magento Demo Store	Advanced shopping flows	⭐⭐⭐⭐⭐
+For learning Playwright from Beginner to Advanced
+Beginner
+Sauce Demo
+The Internet by Heroku
+DemoQA
+
+Practice:
+
+Login
+Buttons
+Dropdowns
+Alerts
+Frames
+Tables
+Intermediate
+Practice Software Testing
+Automation Exercise
+OpenCart Demo
+
+Practice:
+
+Search
+Add to cart
+Checkout
+Filters
+Pagination
+File upload/download
+Advanced
+Rahul Shetty Academy Client App
+OrangeHRM Demo
+Magento Demo Store
+
+Practice:
+
+Page Object Model
+API + UI integration
+Network interception
+Authentication
+Data-driven testing
+Parallel execution
+A 30-Day Challenge
+
+Try implementing one scenario each day:
+
+Login
+Logout
+Invalid login
+Registration
+Search
+Sort products
+Filter products
+Add to cart
+Remove from cart
+Update quantity
+Checkout
+Verify order
+Forgot password
+File upload
+File download
+Drag and drop
+Alerts
+Frames
+Multiple tabs
+Shadow DOM
+Tables
+Pagination
+Calendar
+API login
+Create order via API
+Verify order in UI
+Mock an API
+Capture screenshots on failure
+Generate reports
+Run the suite in GitHub Actions
+
+Since you've already worked with Rahul Shetty's Playwright framework, Git, Postman, and API testing, I recommend focusing on these three sites:
+
+Practice Software Testing (most comprehensive for Playwright)
+Rahul Shetty Academy Client App (excellent for API + UI integration)
+OrangeHRM Demo (real-world CRUD and business workflows)
+
+These three together provide a broad set of realistic automation scenarios.
+
+Get smarter responses, upload files and images, and more.
+Log in
+Sign up for free
