@@ -1,55 +1,57 @@
 const { test, expect } = require("@playwright/test");
+const { POManager } = require("../../pageObject/POManager");
 
-const { POManager } = require('../../pageObject/POManager')
+//Need to watch video 89 Again for 
+// Load test data
+//const dataSet = require("../../utils/placeorderTestData.json");
+const dataSet = JSON.parse(JSON.stringify(require('../../utils/placeorderTestData.json')));
 
-test("End to End Automation Learning", async ({ page }) => {
+for (const data of dataSet) {
+  test(`End to End Automation test for ${data.productName}`, async ({ page }) => {
 
+    const poManager = new POManager(page);
 
-  const poManager = new POManager(page);
-  // const context = await browser.newContext();
-  // const page = await context.newPage();
+    const loginPage = poManager.getLoginPage();
+    await loginPage.goto();
 
-  const productName = "ZARA COAT 3";
-  const userName = "rathore.shanu1996@yopmail.com";
-  const password = "Sh@nu25895";
+    // Make sure these property names match your JSON file
+    await loginPage.validLogin(data.userName, data.password);
 
-  const loginPage = poManager.getLoginPage();
-  await loginPage.goto();
-  await loginPage.validLogin(userName, password);
+    const dashboardPage = poManager.getDashboardPage();
+    await dashboardPage.searchProductAddCart(data.productName);
+    await dashboardPage.navigateToCart();
 
-  //await page.locator('.card-body').first().waitFor()
+    await expect(
+      page.locator(`h3:has-text("${data.productName}")`)
+    ).toBeVisible();
 
-  const dashboardPage = poManager.getDashboardPage();
-  await dashboardPage.searchProductAddCart(productName);
-  await dashboardPage.navigateToCart();
+    await page.locator("text=Checkout").click();
 
-  //await page.locator('div li').first().waitFor()
-  const bool = await page.locator(`h3:has-text("${productName}")`).isVisible();
-  expect(bool).toBeTruthy();
+    await page
+      .locator("input[placeholder='Select Country']")
+      .pressSequentially("ind");
 
-  await page.locator("text=Checkout").click();
+    const dropdown = page.locator(".ta-results");
+    await dropdown.waitFor();
 
-  await page
-    .locator("//input[@placeholder='Select Country']")
-    .pressSequentially("ind");
+    const options = dropdown.locator("button");
+    const optionCount = await options.count();
 
-  const dropdown = await page.locator(".ta-results");
-  await dropdown.waitFor();
-  const optionCount = await dropdown.locator("button").count();
-  console.log(optionCount);
+    for (let i = 0; i < optionCount; i++) {
+      const text = await options.nth(i).textContent();
 
-  for (let i = 0; i < optionCount; i++) {
-    let text = await dropdown.locator("button").nth(i).textContent();
-    if (text.trim() === "India") {
-      console.log(text);
-      await dropdown.locator("button").nth(i).click();
-      break;
+      if (text.trim() === "India") {
+        await options.nth(i).click();
+        break;
+      }
     }
-  }
 
-  await expect(page.locator("label[type='text']").first()).toHaveText(userName);
-  //await page.locator("//input[@class='input txt text-validated ng-pristine ng-valid ng-touched']")
-  await page.locator('a:has-text("PLACE ORDER")').click();
+    await expect(page.locator("label[type='text']").first())
+      .toHaveText(data.userName);
 
-  await page.pause();
-});
+    await page.locator("a:has-text('PLACE ORDER')").click();
+
+    // await page.pause();
+  });
+}
+

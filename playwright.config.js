@@ -36,14 +36,21 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'],
-        headless : false,
-       },
-      timeout: 60000,
-    
+  {
+    name: 'chromium',
+    use: {
+      ...devices['Desktop Chrome'],
+      channel: 'chrome',
+      headless: false,
+      screenshot: 'only-on-failure',
+      trace: 'on',
+      ignoreHTTPSErrors : true,
+      permissions:['Geolocation'],
+      video:'on-first-retry',
+      //viewport : {width : 1080, height : 720}
     },
+    timeout: 60000,
+  },
 
     // {
     //   name: 'firefox',
