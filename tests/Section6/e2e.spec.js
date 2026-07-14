@@ -1,5 +1,4 @@
 const { test, expect } = require('@playwright/test');
-const { text } = require('node:stream/consumers');
 
 test("End to End Automation Learning", async ({ browser }) => {
 
@@ -54,23 +53,17 @@ test("End to End Automation Learning", async ({ browser }) => {
 
     for (let i = 0; i < optionCount; i++) {
         let text = await dropdown.locator('button').nth(i).textContent()
-        if(text.trim() === 'India')
-        {
+        if (text.trim() === 'India') {
             console.log(text)
             await dropdown.locator('button').nth(i).click()
             break;
         }
-        
+
     }
 
 
-     await expect(page.locator("label[type='text']").first()).toHaveText('rathore.shanu1996@yopmail.com')
+    await expect(page.locator("label[type='text']").first()).toHaveText('rathore.shanu1996@yopmail.com')
     //await page.locator("//input[@class='input txt text-validated ng-pristine ng-valid ng-touched']")
     await page.locator('a:has-text("PLACE ORDER")').click()
-
-
-
-
-    await page.pause()
 
 })

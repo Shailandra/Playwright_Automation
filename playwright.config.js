@@ -38,6 +38,7 @@ export default defineConfig({
   projects: [
   {
     name: 'chromium',
+    retries: 1,
     use: {
       ...devices['Desktop Chrome'],
       channel: 'chrome',
@@ -45,7 +46,7 @@ export default defineConfig({
       screenshot: 'only-on-failure',
       trace: 'on',
       ignoreHTTPSErrors : true,
-      permissions:['Geolocation'],
+      // permissions:['Geolocation'],
       video:'on-first-retry',
       //viewport : {width : 1080, height : 720}
     },
