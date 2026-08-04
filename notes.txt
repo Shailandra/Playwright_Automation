@@ -569,3 +569,32 @@ These three together provide a broad set of realistic automation scenarios.
 Get smarter responses, upload files and images, and more.
 Log in
 Sign up for free
+
+
+Here are some of the best websites to practice Playwright automation:
+
+Practice Software Testing
+Sauce Demo
+The Internet (Heroku)
+DemoQA
+Automation Exercise
+OpenCart Demo
+OrangeHRM Demo
+Parabank Demo
+Magento Demo Store
+Rahul Shetty Academy Client App
+Additional practice sites
+UI Testing Playground
+Books to Scrape
+Quotes to Scrape
+Petstore Swagger API (API practice)
+ReqRes (API practice)
+JSONPlaceholder (API practice)
+
+If your goal is to become job-ready in Playwright, I recommend practicing primarily on these five:
+
+Practice Software Testing
+OrangeHRM Demo
+Sauce Demo
+Automation Exercise
+Rahul Shetty Academy Client App
